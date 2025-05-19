@@ -1,0 +1,74 @@
+/* Reset muy básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Tipografía y contenedor */
+body {
+  font-family: sans-serif;
+  line-height: 1.4;
+  padding: 20px;
+  background: #f9f9f9;
+}
+
+header h1 {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+/* 1. Collage: grid flexible */
+.collage {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 10px;
+  margin-bottom: 2rem;
+}
+.collage .cell {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.collage .cell img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 2. Tabla sensorial */
+.table-wrapper {
+  overflow-x: auto; /* scroll horizontal en pantallas pequeñas */
+}
+.sensory-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  margin-bottom: 2rem;
+}
+.sensory-table th,
+.sensory-table td {
+  border: 1px solid #ccc;
+  padding: 8px 10px;
+  text-align: left;
+}
+.sensory-table th {
+  background: #ececec;
+  font-weight: bold;
+}
+.sensory-table tbody tr:nth-child(even) {
+  background: #f5f5f5;
+}
+
+/* Links */
+a {
+  color: #1a0dab;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
